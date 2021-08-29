@@ -1,3 +1,57 @@
-/* create font styles eg h1
-create classes
-create ids */
+p {
+  font-size: 120%;
+  line-height: 1.2em;
+  font-family: "Inconsolata", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+}
+
+h1 {
+  color: #89b0ae;
+  font-size: 140%;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  text-align: center;
+  font-family: "Inconsolata", monospace;
+  src: url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
+}
+
+#buttonAlign {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inconsolata", monospace;
+  margin: 0 auto;
+}
+
+#shadow {
+  box-shadow: 10px 10px 5px #aaaaaa;
+}
+
+/* #cardShadow {
+  border: 10px solid;
+  padding: 10px;
+  box-shadow: 5px 10px #888888;
+} */
+
+.greenButton {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 120%;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #cdebe0;
+  border: none;
+  border-radius: 15px;
+}
+
+.greenButton:hover {
+  background-color: #9fdfc7;
+}
+
+.greenButton:active {
+  background-color: #9fdfc7;
+  transform: translateY(1px);
+}

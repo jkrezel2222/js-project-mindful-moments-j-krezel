@@ -5,12 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- Link style sheet -->
+    <link rel="stylesheet" href="style.css">
+    <!-- Link font family -->
+    <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap" rel="stylesheet">
+
+
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 
     <title>Mindful Moments</title>
   </head>
   <body>
+    <br></br>
     <h1>Mindful Moments</h1>
 
     <!-- <div class="text-center">
@@ -21,36 +29,29 @@
 
     <!-- <div class="shadow-lg p-3 mb-5 bg-body rounded">Quote text for the card will go here</div> -->
 
+    <br></br>
+
     <div class="container">
         <div class="row align-items-center">
             <div class="col">
               
             </div>
             <div class="col">
-                <button type="button" class="btn btn-outline-success">Pick your quote card</button>
-                <!-- Button trigger modal -->
-<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
-    Launch static backdrop modal
-  </button>
-  
-  <!-- Modal -->
-  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          ...
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Understood</button>
-        </div>
-      </div>
-    </div>
-  </div>
+                <button type="button" role="button" class="greenButton" id="buttonAlign">Pick your quote card</button>
+                
+                    <br></br>
+
+                <div class="card bg-dark text-white">
+                    <img src="https://images.unsplash.com/photo-1467241850596-6a0de48568da?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=666&q=80" class="card-img" alt="green-nature-background">
+                    <div class="card-img-overlay" id="fromAPI">
+                      <p class="card-text"></p>
+                    </div>
+                </div>
+
+                <br></br>
+
+
+
             </div>
             <div class="col">
               
