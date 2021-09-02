@@ -1,13 +1,17 @@
 p {
-  font-size: 120%;
+  font-size: 1.9vw;
+  padding-top: 35%;
+  padding-left: 5%;
+  padding-right: 5%;
   line-height: 1.2em;
+  text-align: center;
   font-family: "Inconsolata", monospace;
   src: url("https://fonts.googleapis.com/css2?family=Inconsolata:wght@500&display=swap");
 }
 
 h1 {
   color: #89b0ae;
-  font-size: 140%;
+  font-size: 4vw;
   line-height: 1.5em;
   letter-spacing: 0.05em;
   text-align: center;
@@ -33,10 +37,14 @@ h1 {
   box-shadow: 5px 10px #888888;
 } */
 
+/* .cardCustom {
+  border: none;
+} */
+
 .greenButton {
   display: inline-block;
   padding: 5px 15px;
-  font-size: 120%;
+  font-size: 1.6vw;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
