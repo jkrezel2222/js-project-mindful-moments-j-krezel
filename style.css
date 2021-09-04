@@ -33,6 +33,7 @@ h1 {
   align-items: center;
   justify-content: center;
   font-family: "Inconsolata", monospace;
+  font-size: 2vw;
   margin: 0 auto;
 }
 

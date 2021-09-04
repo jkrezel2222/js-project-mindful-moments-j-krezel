@@ -45,9 +45,11 @@ function fetchDataQuote() {
     .catch(error => {
         console.log(error);
     });
+    setTimeout(function() {
+        window.location.reload();
+    }, 8000);
 }
 
 document.querySelector(".crossButton").addEventListener("click", function() {
     window.location.reload();
-    
 });
