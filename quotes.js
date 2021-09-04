@@ -1,5 +1,5 @@
 
-const quotesList = [
+let quotesList = [
 
     {
     _id:"5eb17aaeb69dc744b4e73ae5",
