@@ -27,19 +27,18 @@ h1 {
   margin: 0 auto;
 }
 
+#crossButtonAlign {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  justify-content: center;
+  font-family: "Inconsolata", monospace;
+  margin: 0 auto;
+}
+
 #shadow {
   box-shadow: 10px 10px 5px #aaaaaa;
 }
-
-/* #cardShadow {
-  border: 10px solid;
-  padding: 10px;
-  box-shadow: 5px 10px #888888;
-} */
-
-/* .cardCustom {
-  border: none;
-} */
 
 .greenButton {
   display: inline-block;
@@ -60,6 +59,29 @@ h1 {
 }
 
 .greenButton:active {
+  background-color: #9fdfc7;
+  transform: translateY(1px);
+}
+
+.crossButton {
+  display: inline-block;
+  padding: 5px 15px;
+  font-size: 1.6vw;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #cdebe0;
+  border: none;
+  border-radius: 15px;
+}
+
+.crossButton:hover {
+  background-color: #9fdfc7;
+}
+
+.crossButton:active {
   background-color: #9fdfc7;
   transform: translateY(1px);
 }

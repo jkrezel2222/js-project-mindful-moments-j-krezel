@@ -3,18 +3,25 @@ window.addEventListener('load',
     console.log("Load success!");
   }, false);
 
+//link sound file to button click
+let soundAudio = document.querySelector("#audio");
+
+//make the url fetch random
 let quoteURLS = [
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=best&author=buddha&limit=1",
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=love&author=Voltaire&limit=1",
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=courage&author=Amelia",
     "https://quote-garden.herokuapp.com/api/v3/quotes?author=maya&genre=courage&limit=1"
-]
+];
 
 let randomURL = quoteURLS[Math.floor(Math.random() * quoteURLS.length)];
 console.log(randomURL);
 
-fetchDataQuote();
-
+document.getElementById("buttonAlign").addEventListener("click", function() {
+    soundAudio.play();
+    return fetchDataQuote();
+    
+});
 
 function fetchDataQuote() {
     fetch(randomURL) //fetches a random quote from quote API
@@ -40,3 +47,7 @@ function fetchDataQuote() {
     });
 }
 
+document.querySelector(".crossButton").addEventListener("click", function() {
+    window.location.reload();
+    
+});
