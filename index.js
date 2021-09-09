@@ -1,20 +1,15 @@
-window.addEventListener('load', 
-  function() { 
-    console.log("Load success!");
-  }, false);
-
 //find sound file in the html
 let soundAudio = document.querySelector("#audio");
 
 //make the url fetch random
 let quoteURLS = [
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=best&author=buddha&limit=1",
-    "https://quote-garden.herokuapp.com/api/v3/quotes?author=rumi&genre=love&limit=1",
+    "https://quote-garden.herokuapp.com/api/v3/quotes?author=rumi&genre=life",
     "https://quote-garden.herokuapp.com/api/v3/quotes?author=nhat&genre=peace&limit=1",
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=love&author=Voltaire&limit=1",
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=courage&author=Amelia",
     "https://quote-garden.herokuapp.com/api/v3/quotes?author=louise&genre=experience",
-    "https://quote-garden.herokuapp.com/api/v3/quotes?author=maya&genre=courage&limit=1",
+    "https://quote-garden.herokuapp.com/api/v3/quotes?author=angelou&genre=attitude",
     "https://quote-garden.herokuapp.com/api/v3/quotes?genre=peace&author=dalai&limit=1",
     "https://quote-garden.herokuapp.com/api/v3/quotes?author=dyer&genre=change&limit=1"
 ];
@@ -26,7 +21,7 @@ console.log(randomURL);
 document.getElementById("buttonAlign").addEventListener("click", function() {
     
     soundAudio.play();
-    return fetchDataQuote();
+    fetchDataQuote();
 });
 
 function fetchDataQuote() {
